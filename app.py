@@ -6,7 +6,7 @@ import string
 from spacy.lang.en.stop_words import STOP_WORDS
 stopwords= list(STOP_WORDS)
 punct = string.punctuation
-nlp= spacy.load("en_core_web_sm")
+nlp = spacy.load("en_core_web_sm")
 def text_cleaning(vario): # accept only 1 review at a run
   doc = nlp(vario) # calling spacy model to work on a SENTENCE 
  
